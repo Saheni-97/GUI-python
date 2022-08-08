@@ -1,4 +1,5 @@
 #This gui is build on python
+#This is my first GUI
 from tkinter import *
 from tkinter import messagebox
 from math import *
