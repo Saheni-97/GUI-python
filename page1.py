@@ -20,7 +20,7 @@ selected_month = tk.StringVar()
 month_cb = ttk.Combobox(root, textvariable=selected_month)
 
 # get first 8 letters of every month name
-month_cb['values'] = [month_name[m][0:8] for m in range(1, 13)]
+month_cb['values'] = [month_name[m][0:9] for m in range(1, 13)]
 
 # prevent typing a value
 month_cb['state'] = 'readonly'
@@ -43,5 +43,5 @@ month_cb.bind('<<ComboboxSelected>>', month_changed)
 # set the current month
 current_month = datetime.now().strftime('%b')
 month_cb.set(current_month)
-
+#this is the main window loop
 root.mainloop()
